@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav id="navigation">
+        <ul id="ul">
+        
+            <li id="index"><a href="index.html">Home</a></li>
+            <li id="login"><a href="log-in.html">Log-in</a></li>
+            <li id="register" class="active"><a href="register.html">Register</a></li>
+        
+        </ul>
+    </nav>
+    <div class="main">
+        <h1 id="registration-info">Registration</h1>
+        <input class="input" type="text" id="username-register" placeholder="Enter Username">
+        <br>
+        <br>
+        <input class="input" type="password" id="password-register" placeholder="Enter Password">
+        <br>
+        <br>
+        <input class="input" type="password" id="password-register-confirm" placeholder="Confirm Password">
+        <br>
+        <br>
+        <button id="register-confirm-btn">Register</button>
+        <button id="cancel-btn">Clear</button>
+        <br>
+        <br>
+        <div class="lds-spinner" id="loader"><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div><div></div></div>
+    </div>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.2.10/firebase-database.js"></script> 
+    <script src="firebase.js"></script>
+    <script src="registration.js"></script>
+</body>
+</html>
